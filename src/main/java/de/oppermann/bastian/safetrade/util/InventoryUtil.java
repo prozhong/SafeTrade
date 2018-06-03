@@ -77,7 +77,7 @@ public class InventoryUtil {
         title = title.length() > 32 ? title.substring(0, 32) : title;
         Inventory defaultTradeInventory = Bukkit.createInventory(null, 9 * 6, title);
 
-        ItemStack separateStack = design.getItem("seperator", ChatColor.GOLD.toString());
+        ItemStack separateStack = design.getItem("seperator", "§f§f");
 
         for (int i = 0; i < 6; i++) {
             defaultTradeInventory.setItem(9 * i + 4, separateStack.clone());
